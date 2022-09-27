@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/ghPageWeb3Auth/static/css/main.324bf7c7.css",
+    "main.js": "/ghPageWeb3Auth/static/js/main.f6eb6b98.js",
+    "static/js/978.063795a3.chunk.js": "/ghPageWeb3Auth/static/js/978.063795a3.chunk.js",
+    "static/js/938.ed221662.chunk.js": "/ghPageWeb3Auth/static/js/938.ed221662.chunk.js",
+    "static/js/389.8370470c.chunk.js": "/ghPageWeb3Auth/static/js/389.8370470c.chunk.js",
+    "static/js/122.8e73c55f.chunk.js": "/ghPageWeb3Auth/static/js/122.8e73c55f.chunk.js",
+    "static/js/295.de0db1d7.chunk.js": "/ghPageWeb3Auth/static/js/295.de0db1d7.chunk.js",
+    "static/js/773.d341abdf.chunk.js": "/ghPageWeb3Auth/static/js/773.d341abdf.chunk.js",
+    "static/js/787.3d7bf628.chunk.js": "/ghPageWeb3Auth/static/js/787.3d7bf628.chunk.js",
+    "static/js/135.13e32781.chunk.js": "/ghPageWeb3Auth/static/js/135.13e32781.chunk.js",
+    "static/js/656.123c6b58.chunk.js": "/ghPageWeb3Auth/static/js/656.123c6b58.chunk.js",
+    "static/js/256.de77354e.chunk.js": "/ghPageWeb3Auth/static/js/256.de77354e.chunk.js",
+    "static/js/968.b3ef5455.chunk.js": "/ghPageWeb3Auth/static/js/968.b3ef5455.chunk.js",
+    "static/js/811.b21d77e7.chunk.js": "/ghPageWeb3Auth/static/js/811.b21d77e7.chunk.js",
+    "index.html": "/ghPageWeb3Auth/index.html",
+    "main.324bf7c7.css.map": "/ghPageWeb3Auth/static/css/main.324bf7c7.css.map",
+    "main.f6eb6b98.js.map": "/ghPageWeb3Auth/static/js/main.f6eb6b98.js.map",
+    "938.ed221662.chunk.js.map": "/ghPageWeb3Auth/static/js/938.ed221662.chunk.js.map",
+    "389.8370470c.chunk.js.map": "/ghPageWeb3Auth/static/js/389.8370470c.chunk.js.map",
+    "122.8e73c55f.chunk.js.map": "/ghPageWeb3Auth/static/js/122.8e73c55f.chunk.js.map",
+    "773.d341abdf.chunk.js.map": "/ghPageWeb3Auth/static/js/773.d341abdf.chunk.js.map",
+    "787.3d7bf628.chunk.js.map": "/ghPageWeb3Auth/static/js/787.3d7bf628.chunk.js.map",
+    "656.123c6b58.chunk.js.map": "/ghPageWeb3Auth/static/js/656.123c6b58.chunk.js.map",
+    "256.de77354e.chunk.js.map": "/ghPageWeb3Auth/static/js/256.de77354e.chunk.js.map",
+    "968.b3ef5455.chunk.js.map": "/ghPageWeb3Auth/static/js/968.b3ef5455.chunk.js.map",
+    "811.b21d77e7.chunk.js.map": "/ghPageWeb3Auth/static/js/811.b21d77e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.324bf7c7.css",
+    "static/js/main.f6eb6b98.js"
+  ]
+}
