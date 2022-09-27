@@ -1,20 +1,21 @@
 import { useEffect, useState } from "react";
-import { Web3Auth } from "@web3auth/web3auth";
-import { CHAIN_NAMESPACES, SafeEventEmitterProvider } from "@web3auth/base";
+import { Web3AuthCore } from "@web3auth/core";
+import { CHAIN_NAMESPACES, SafeEventEmitterProvider, WALLET_ADAPTERS } from "@web3auth/base";
+import { OpenloginAdapter } from "@web3auth/openlogin-adapter";
 import RPC from "./solanaRPC";
 import "./App.css";
 
 const clientId = "YOUR_CLIENT_ID"; // get from https://dashboard.web3auth.io
 
 function App() {
-  const [web3auth, setWeb3auth] = useState<Web3Auth | null>(null);
+  const [web3auth, setWeb3auth] = useState<Web3AuthCore | null>(null);
   const [provider, setProvider] = useState<SafeEventEmitterProvider | null>(null);
 
   useEffect(() => {
     const init = async () => {
       try {
 
-      const web3auth = new Web3Auth({
+      const web3auth = new Web3AuthCore({
         clientId,
         chainConfig: {
           chainNamespace: CHAIN_NAMESPACES.SOLANA,
@@ -25,10 +26,18 @@ function App() {
 
       setWeb3auth(web3auth);
 
-      await web3auth.initModal();
-        if (web3auth.provider) {
-          setProvider(web3auth.provider);
-        };
+      const openloginAdapter = new OpenloginAdapter({
+        adapterSettings: {
+          network: "testnet",
+          uxMode: "popup",
+        },
+      });
+      web3auth.configureAdapter(openloginAdapter);
+
+      await web3auth.init();
+      if (web3auth.provider) {
+        setProvider(web3auth.provider);
+      }
       } catch (error) {
         console.error(error);
       }
@@ -42,7 +51,12 @@ function App() {
       console.log("web3auth not initialized yet");
       return;
     }
-    const web3authProvider = await web3auth.connect();
+    const web3authProvider = await web3auth.connectTo(
+      WALLET_ADAPTERS.OPENLOGIN,
+      {
+        loginProvider: 'google',
+      },
+    );
     setProvider(web3authProvider);
   };
 

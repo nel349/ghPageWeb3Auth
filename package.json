@@ -1,9 +1,9 @@
 {
-  "name": "react-solana-web3auth-example",
+  "name": "react-solana-core",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nel349.github.io/ghPageWeb3Auth",
   "dependencies": {
-    "@solana/web3.js": "^1.36.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,8 +12,10 @@
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
     "@web3auth/base": "^2.0.0",
-    "@web3auth/solana-provider": "^2.0.0",
     "@web3auth/web3auth": "^2.0.2",
+    "@web3auth/openlogin-adapter": "2.0.2",
+    "@web3auth/solana-provider": "^2.0.0",
+    "@solana/web3.js": "^1.36.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
@@ -42,7 +44,6 @@
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.0",
-    "gh-pages": "^4.0.0",
     "https-browserify": "^1.0.0",
     "os-browserify": "^0.3.0",
     "process": "^0.11.10",
@@ -52,9 +53,11 @@
     "url": "^0.11.0"
   },
   "scripts": {
-    "start": "HTTPS=true react-app-rewired start",
+    "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
