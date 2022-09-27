@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ghPageWeb3Auth/static/css/main.324bf7c7.css",
-    "main.js": "/ghPageWeb3Auth/static/js/main.f6eb6b98.js",
+    "main.js": "/ghPageWeb3Auth/static/js/main.20fb1ab4.js",
     "static/js/978.063795a3.chunk.js": "/ghPageWeb3Auth/static/js/978.063795a3.chunk.js",
     "static/js/938.ed221662.chunk.js": "/ghPageWeb3Auth/static/js/938.ed221662.chunk.js",
     "static/js/389.8370470c.chunk.js": "/ghPageWeb3Auth/static/js/389.8370470c.chunk.js",
@@ -16,7 +16,7 @@
     "static/js/811.b21d77e7.chunk.js": "/ghPageWeb3Auth/static/js/811.b21d77e7.chunk.js",
     "index.html": "/ghPageWeb3Auth/index.html",
     "main.324bf7c7.css.map": "/ghPageWeb3Auth/static/css/main.324bf7c7.css.map",
-    "main.f6eb6b98.js.map": "/ghPageWeb3Auth/static/js/main.f6eb6b98.js.map",
+    "main.20fb1ab4.js.map": "/ghPageWeb3Auth/static/js/main.20fb1ab4.js.map",
     "938.ed221662.chunk.js.map": "/ghPageWeb3Auth/static/js/938.ed221662.chunk.js.map",
     "389.8370470c.chunk.js.map": "/ghPageWeb3Auth/static/js/389.8370470c.chunk.js.map",
     "122.8e73c55f.chunk.js.map": "/ghPageWeb3Auth/static/js/122.8e73c55f.chunk.js.map",
@@ -29,6 +29,6 @@
   },
   "entrypoints": [
     "static/css/main.324bf7c7.css",
-    "static/js/main.f6eb6b98.js"
+    "static/js/main.20fb1ab4.js"
   ]
 }
